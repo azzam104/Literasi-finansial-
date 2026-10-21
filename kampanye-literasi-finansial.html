@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nabung Bijak, Masa Depan Cerah</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8fb;--card:#fff;--ink:#241838;--mute:#665a7d;--pink:#ff4f8b;--violet:#6a4cf0;--teal:#12b5a0;--amber:#ffb020;--line:#f0e3ee;--soft-pink:#ffe3ee;--soft-violet:#ebe6ff;--soft-teal:#d9f6f1;--soft-amber:#fff0cc}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+svg.i{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-weight:800;font-size:1.2rem;display:flex;gap:10px;align-items:center}
+.logo b{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--pink),var(--violet));color:#fff;display:grid;place-items:center;font-size:1.1rem}
+.links{display:none}.links a{color:var(--mute);text-decoration:none;font-weight:500;margin-right:22px;font-size:.95rem}.links a:hover{color:var(--pink)}
+@media(min-width:760px){.links{display:block}}
+.btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--pink),#ff7a59);color:#fff;border:0;border-radius:999px;padding:12px 24px;font-weight:700;font-size:.95rem;font-family:inherit;text-decoration:none;cursor:pointer;box-shadow:0 8px 20px -8px rgba(255,79,139,.7)}
+.btn.alt{background:#fff;color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+.heroWrap{background:radial-gradient(600px 300px at 90% 0,var(--soft-violet),transparent 70%),radial-gradient(500px 300px at 0 20%,var(--soft-pink),transparent 70%)}
+h1{font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.1;margin:0 0 16px;font-weight:800;letter-spacing:-.02em}
+h1 span{display:block}
+h1 span:nth-child(1){color:var(--teal)}h1 span:nth-child(2){color:var(--pink)}h1 span:nth-child(3){color:var(--violet)}
+h2{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.2;margin:0 0 8px;font-weight:800}
+h3{margin:0 0 6px;font-size:1.1rem}
+p{margin:0 0 14px;color:var(--mute)}
+.hero{display:grid;gap:32px;padding:28px 0 56px}
+@media(min-width:860px){.hero{grid-template-columns:1.05fr 1fr;align-items:center}}
+.lead{font-size:1.1rem;max-width:46ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 20px 50px -25px rgba(106,76,240,.45)}
+.calc h3{display:flex;gap:8px;align-items:center}.calc h3 svg{color:var(--violet)}
+.case{background:var(--soft-amber);border-radius:14px;padding:12px 14px;font-size:.88rem;margin:10px 0 4px}
+.row{margin-top:14px}.row label{display:flex;justify-content:space-between;font-size:.9rem;font-weight:500}
+input[type=range]{width:100%}#j{accent-color:var(--pink)}#s{accent-color:var(--amber)}
+.stack{display:flex;height:14px;border-radius:8px;overflow:hidden;margin-top:16px;background:var(--line)}
+.stack span{display:block;transition:width .3s}
+.leg{display:flex;gap:14px;flex-wrap:wrap;font-size:.78rem;color:var(--mute);margin-top:6px}
+.leg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.res{margin-top:16px;background:linear-gradient(135deg,var(--soft-teal),#eafaf6);border-radius:18px;padding:16px}
+.res small{color:var(--mute);display:block}.res strong{font-size:1.9rem;font-weight:800;color:#0d8a79}
+.prog{height:12px;border-radius:8px;background:#fff;margin-top:10px;overflow:hidden}
+.prog span{display:block;height:100%;background:linear-gradient(90deg,var(--teal),#5be0cc);width:0;transition:width .3s}
+section{padding:44px 0}.head{margin-bottom:24px}
+.grid{display:grid;gap:16px}
+@media(min-width:760px){.c3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(36,24,56,.35)}
+.ic{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:14px}
+.p .ic{background:var(--soft-pink);color:var(--pink)}.v .ic{background:var(--soft-violet);color:var(--violet)}.t .ic{background:var(--soft-teal);color:#0d8a79}
+.tag{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 12px;border-radius:999px;margin-bottom:8px}
+.p .tag{background:var(--soft-pink);color:#c2255c}.v .tag{background:var(--soft-violet);color:#4b30c9}.t .tag{background:var(--soft-teal);color:#0b6f61}
+.safe{background:linear-gradient(135deg,#6a4cf0,#8a5cf5);color:#fff;border-radius:32px;padding:34px}
+.safe h2{color:#fff}.safe>p{color:#e7e0ff}
+.safe ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+@media(min-width:760px){.safe ul{grid-template-columns:1fr 1fr}}
+.safe li{background:#fff;color:var(--ink);border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+.safe li svg{color:var(--teal);font-size:1.3rem;margin-top:2px}
+form.f{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;display:grid;gap:12px;max-width:640px;margin:0 auto;box-shadow:0 20px 50px -30px rgba(255,79,139,.5)}
+form.f label{font-weight:700;font-size:.9rem}
+form.f input,form.f textarea{width:100%;padding:12px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.faq{max-width:760px;margin:0 auto}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:10px;padding:0 20px}
+summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:1.4rem;color:var(--pink);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding-bottom:16px;margin:0}
+footer{padding:32px 0;margin-top:32px;border-top:1px solid var(--line);font-size:.85rem;color:var(--mute);text-align:center}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+<symbol id="lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="gift" viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></symbol>
+<symbol id="image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+<symbol id="video" viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></symbol>
+<symbol id="mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+<symbol id="wallet" viewBox="0 0 24 24"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></symbol>
+<symbol id="send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+</svg>
+
+<div class="heroWrap"><div class="w">
+<nav><div class="logo"><b><svg class="i"><use href="#heart"/></svg></b>Cinta Uang</div><div class="links"><a href="#pesan">Tiga pesan</a><a href="#media">Cara kampanye</a><a href="#aman">Aman digital</a><a href="#faq">FAQ</a></div><a class="btn" href="#janji">Ikut janji</a></nav>
+<header class="hero">
+<div>
+<h1><span>Nabung Bijak,</span><span>Masa Depan Cerah.</span></h1>
+<p class="lead">Kampanye literasi finansial dari siswa untuk teman sebaya. Belajar mengatur uang saku, jajan penuh cinta, bertransaksi digital dengan aman, dan berbagi tanpa sisa.</p>
+<div class="cta"><a class="btn" href="#janji"><svg class="i"><use href="#heart"/></svg>Ikut kampanye</a><a class="btn alt" href="#pesan">Baca tiga pesan kami</a></div>
+</div>
+<div class="calc">
+<h3><svg class="i"><use href="#wallet"/></svg>Bantu Budi atur uang sakunya</h3>
+<div class="case">Budi punya uang saku <b>Rp150.000</b> per minggu. Ia ingin membeli sepatu <b>Rp250.000</b>, tetap bersedekah, dan punya simpanan.</div>
+<div class="row"><label for="j">Jajan harian (5 hari) <b id="jv" style="color:var(--pink)"></b></label><input id="j" type="range" min="0" max="150000" step="5000" value="100000"></div>
+<div class="row"><label for="s">Sedekah / berbagi <b id="sv" style="color:#d98a00"></b></label><input id="s" type="range" min="0" max="150000" step="5000" value="10000"></div>
+<div class="stack"><span id="k1" style="background:var(--pink)"></span><span id="k2" style="background:var(--amber)"></span><span id="k3" style="background:var(--teal)"></span></div>
+<div class="leg"><span><i style="background:var(--pink)"></i>Jajan</span><span><i style="background:var(--amber)"></i>Sedekah</span><span><i style="background:var(--teal)"></i>Menabung</span></div>
+<div class="res"><small>Sisa untuk menabung sepatu</small><strong id="nv"></strong><small id="wk" style="margin-top:6px"></small><div class="prog"><span id="pg"></span></div></div>
+</div>
+</header>
+</div></div>
+
+<div class="w">
+<section id="pesan">
+<div class="head"><h2>Tiga pesan utama kami</h2><p>Satu kampanye, tiga bentuk cinta.</p></div>
+<div class="grid c3">
+<div class="card p"><div class="ic"><svg class="i"><use href="#heart"/></svg></div><span class="tag">Hemat</span><h3>Cinta diri</h3><p>Sisihkan uang di awal, bukan di akhir. Menabung hari ini adalah hadiah untuk dirimu yang nanti.</p></div>
+<div class="card v"><div class="ic"><svg class="i"><use href="#lock"/></svg></div><span class="tag">Transaksi online</span><h3>Etika dan keamanan digital</h3><p>Jaga PIN dan kode OTP, hindari tautan mencurigakan, dan jangan ikut-ikutan belanja impulsif.</p></div>
+<div class="card t"><div class="ic"><svg class="i"><use href="#gift"/></svg></div><span class="tag">Berbagi</span><h3>Peduli sesama</h3><p>Berbagi tidak harus menunggu kaya. Sedikit dari uang saku sudah berarti bagi teman yang membutuhkan.</p></div>
+</div>
+</section>
+
+<section id="media">
+<div class="head"><h2>Pilih cara berkampanye</h2><p>Setiap kelompok memilih media yang paling cocok dengan gaya belajarnya.</p></div>
+<div class="grid c3">
+<div class="card p"><div class="ic"><svg class="i"><use href="#image"/></svg></div><span class="tag">Visual</span><h3>Poster dan infografis</h3><p>Poster mading atau infografis digital berisi tips hemat yang mudah diingat.</p></div>
+<div class="card v"><div class="ic"><svg class="i"><use href="#video"/></svg></div><span class="tag">Audiovisual</span><h3>Video pendek</h3><p>Reels, TikTok, atau status WA berdurasi singkat yang mengajak teman menabung.</p></div>
+<div class="card t"><div class="ic"><svg class="i"><use href="#mic"/></svg></div><span class="tag">Verbal dan kinestetik</span><h3>Sesi sharing</h3><p>Podcast, cerita langsung, atau simulasi singkat mengatur uang saku bersama teman.</p></div>
+</div>
+</section>
+
+<section id="aman">
+<div class="safe"><h2>Cek dulu sebelum transaksi</h2><p>Lima kebiasaan aman saat memakai dompet digital atau belanja online.</p>
+<ul>
+<li><svg class="i"><use href="#check"/></svg>Jangan bagikan kode OTP atau PIN, bahkan ke teman dekat.</li>
+<li><svg class="i"><use href="#check"/></svg>Tanya orang tua sebelum membeli atau memasukkan data kartu.</li>
+<li><svg class="i"><use href="#check"/></svg>Periksa nama penjual dan ulasannya sebelum membayar.</li>
+<li><svg class="i"><use href="#check"/></svg>Waspada tawaran gratis atau diskon yang terlalu bagus.</li>
+<li><svg class="i"><use href="#check"/></svg>Tunggu 24 jam sebelum membeli barang yang bukan kebutuhan.</li>
+</ul></div>
+</section>
+
+<section id="janji">
+<div class="head" style="text-align:center"><h2>Buat janji kecilmu</h2><p>Tulis satu kebiasaan yang mau kamu mulai minggu ini.</p></div>
+<form class="f" id="pf">
+<label for="nm">Nama</label><input id="nm" required placeholder="Nama kamu">
+<label for="jj">Janjiku minggu ini</label><textarea id="jj" rows="3" required placeholder="Contoh: Aku menabung Rp20.000 sebelum jajan."></textarea>
+<button class="btn" type="submit"><svg class="i"><use href="#send"/></svg>Kirim janji</button>
+<p id="ok" style="margin:0"></p>
+</form>
+</section>
+
+<section id="faq">
+<div class="head" style="text-align:center"><h2>Pertanyaan yang sering muncul</h2></div>
+<div class="faq">
+<details open><summary>Siapa yang bisa ikut kampanye ini?</summary><p>Semua teman sebaya. Kampanye dirancang oleh kelompok siswa dalam pelajaran IPS dan terbuka untuk satu sekolah.</p></details>
+<details><summary>Uang sakuku sedikit, apa masih bisa menabung?</summary><p>Bisa. Mulailah dari jumlah kecil yang tetap, lalu naikkan perlahan. Kebiasaannya lebih penting daripada nominalnya.</p></details>
+<details><summary>Kenapa ada bagian sedekah?</summary><p>Keuangan yang sehat bukan hanya soal menyimpan. Berbagi melatih rasa syukur dan peduli pada sesama.</p></details>
+<details><summary>Bagaimana kelompok lain memberi masukan?</summary><p>Lewat metode 3C: Compliment (pujian kasih), Clarification (pertanyaan santun), dan Constructive idea (saran membangun).</p></details>
+</div>
+</section>
+<footer>Proyek kampanye literasi finansial berbasis cinta. Mata pelajaran IPS.</footer>
+</div>
+
+<script>
+var $=function(i){return document.getElementById(i)},T=150000,P=250000;
+function rp(n){return 'Rp'+Math.round(n).toLocaleString('id-ID')}
+function upd(src){
+var j=+$('j').value,s=+$('s').value;
+if(j+s>T){if(src==='j'){s=T-j;$('s').value=s}else{j=T-s;$('j').value=j}}
+var n=T-j-s;
+$('jv').textContent=rp(j);$('sv').textContent=rp(s);$('nv').textContent=rp(n);
+$('k1').style.width=j/T*100+'%';$('k2').style.width=s/T*100+'%';$('k3').style.width=n/T*100+'%';
+if(n<=0){$('wk').textContent='Belum ada tabungan. Kurangi jajan atau sedekah sedikit.';$('pg').style.width='0'}
+else{$('wk').textContent='Sepatu Rp250.000 tercapai dalam '+Math.ceil(P/n)+' minggu.';$('pg').style.width=Math.min(100,n/P*100)+'%'}}
+$('j').addEventListener('input',function(){upd('j')});$('s').addEventListener('input',function(){upd('s')});upd('j');
+$('pf').addEventListener('submit',function(e){e.preventDefault();$('ok').textContent='Terima kasih, '+$('nm').value+'! Janjimu tercatat. Semoga konsisten.'});
+</script>
+</body>
+</html>
